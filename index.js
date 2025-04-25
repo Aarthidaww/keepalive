@@ -10,7 +10,4 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || constants.PORT;
 
-server.listen(PORT, () => {
-  console.log("server listening");
-  keepServerAlive.start();
-});
+keepServerAlive()
